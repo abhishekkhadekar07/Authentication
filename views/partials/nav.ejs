@@ -1,0 +1,18 @@
+<nav>
+    <title>
+        <%= title %>
+    </title>
+
+    <u1>
+        <li><a href="/">home</a></li>
+        <li><a href="/Secured">Secured</a></li>
+        <% if(!isAuthenticated) { %>
+            <li><a href="/login">login</a></li>
+
+            <%} else{ %>
+
+                <li><a href="/logout">Logout</a></li>
+                <% } %>
+    </u1>
+
+</nav>
